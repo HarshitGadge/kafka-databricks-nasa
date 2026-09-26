@@ -1,0 +1,8 @@
+# Local development and test only. On Databricks, Spark and its Kafka connector
+# come from the runtime -- do not install pyspark on a cluster.
+pyspark==3.5.1
+pandas>=2.0
+pyarrow>=14.0
+pytest>=7.4
+# pyspark 3.5 imports distutils, which Python 3.12 removed.
+setuptools<81; python_version >= "3.12"

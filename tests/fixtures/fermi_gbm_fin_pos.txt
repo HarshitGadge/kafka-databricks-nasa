@@ -1,0 +1,29 @@
+TITLE:           GCN/FERMI NOTICE
+NOTICE_DATE:     Wed 13 Aug 25 04:12:33 UT
+NOTICE_TYPE:     Fermi-GBM Final Position
+RECORD_NUM:      52
+TRIGGER_NUM:     776751152
+GRB_RA:          214.517d {+14h 18m 04s} (J2000),
+                 214.856d {+14h 19m 25s} (current),
+                 213.869d {+14h 15m 28s} (1950)
+GRB_DEC:         -11.300d {-11d 18' 00"} (J2000),
+                 -11.437d {-11d 26' 13"} (current),
+                 -11.036d {-11d 02' 09"} (1950)
+GRB_ERROR:       1.75 [deg radius, statistical only]
+GRB_DATE:        20900 TJD;   225 DOY;   25/08/13
+GRB_TIME:        14712.00 SOD {04:05:12.00} UT
+GRB_PHI:         143.00 [deg]
+GRB_THETA:        52.00 [deg]
+E_RANGE:         47-291 [keV]
+LOC_ALGORITHM:   3 (version number of)
+LC_URL:          http://heasarc.gsfc.nasa.gov/FTP/fermi/data/gbm/triggers/2025/bn250813170/quicklook/glg_lc_medres34_bn250813170.gif
+LOC_URL:         http://heasarc.gsfc.nasa.gov/FTP/fermi/data/gbm/triggers/2025/bn250813170/quicklook/glg_locplot_all_bn250813170.png
+SUN_POSTN:       143.21d {+09h 32m 50s}  +14.32d {+14d 19' 12"}
+SUN_DIST:         73.44 [deg]   Sun_angle= -4.7 [hr] (West of Sun)
+MOON_POSTN:      330.91d {+22h 03m 38s}  -12.04d {-12d 02' 24"}
+MOON_DIST:      114.02 [deg]
+MOON_ILLUM:      78 [%]
+GAL_COORDS:      337.06,  47.88 [deg] galactic lon,lat of the burst (or transient)
+ECL_COORDS:      215.39,   3.28 [deg] ecliptic lon,lat of the burst (or transient)
+COMMENTS:        Fermi-GBM Final Position.
+COMMENTS:        This is a GRB.

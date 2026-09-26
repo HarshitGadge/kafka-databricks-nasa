@@ -1,0 +1,16 @@
+TITLE:         GCN/FERMI NOTICE
+NOTICE_DATE:     Thu 14 Aug 25 11:02:01 UT
+NOTICE_TYPE:     Fermi-GBM Final Position
+RECORD_NUM:      3
+TRIGGER_NUM:     776840000
+GRB_RA:          10.500d {+00h 42m 00s} (J2000),
+                 10.612d {+00h 42m 27s} (current)
+GRB_DEC:         +41.200d {+41d 12' 00"} (J2000)
+GRB_ERROR:       12.30 [deg radius, statistical only]
+GRB_DATE:        20901 TJD;   226 DOY;   25/08/14
+GRB_TIME:        39721.50 SOD {11:02:01.50} UT
+UNKNOWN_FUTURE:  some new field value
+COMMENTS:        Fermi-GBM Final Position.
+COMMENTS:        The position error radius is large.
+COMMENTS:        This trigger occurred during an SAA passage.
+COMMENTS:        Human-in-the-loop review pending.
