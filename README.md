@@ -16,6 +16,26 @@ publishes a snowflake dimensional model for analysis.
 [![Tests](https://img.shields.io/badge/tests-33%20passing-3fb950)](tests/)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
+## Demo
+
+Everything below is real output from [`demo.py`](demo.py), which runs the actual
+pipeline transforms against the bundled sample notices — no credentials, no
+cluster, no Databricks account:
+
+```bash
+pip install -r requirements-dev.txt
+python demo.py
+```
+
+<p align="center">
+  <img src="docs/img/demo.svg" alt="Terminal output of demo.py: a raw NASA GCN notice parsed into typed Silver columns and a Gold fact table" width="100%">
+</p>
+
+The demo walks one real-format Fermi GBM notice through every layer: the raw
+classic text as GCN delivers it, the four parsing hazards handled, the typed
+Silver record, and the Gold fact and timing dimensions built on a local Spark
+session.
+
 ## Architecture
 
 ```mermaid
@@ -107,6 +127,7 @@ src/gcn_lakehouse/     parsing, schemas, config  (unit-tested, no cluster needed
   deploy.py            shipping the package to executors
 pipelines/             the three medallion jobs
 setup/create_catalog.sql
+demo.py                offline walkthrough of all three layers
 tests/                 33 tests: parser, Spark transforms, dimensional model
 docs/                  architecture, data model, notice parsing, deployment
 ```
@@ -120,7 +141,8 @@ pytest
 ```
 
 The parser tests need nothing but Python. The Spark transform tests spin up a
-local session and are skipped automatically if pyspark is not installed.
+local session and are skipped automatically if pyspark is not installed — as
+does the Gold section of `demo.py`.
 
 ## Deploying
 
