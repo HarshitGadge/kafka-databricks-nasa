@@ -1,5 +1,7 @@
 # NASA GCN Fermi Streaming Lakehouse
 
+[![tests](https://github.com/HarshitGadge/kafka-databricks-nasa/actions/workflows/tests.yml/badge.svg)](https://github.com/HarshitGadge/kafka-databricks-nasa/actions/workflows/tests.yml)
+
 Real-time data engineering pipeline that consumes **NASA General Coordinates
 Network (GCN)** gamma-ray burst notices from Kafka and models them as an
 analytics-ready lakehouse on Databricks.
